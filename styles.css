@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:azure
+}
+
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 12vh;
+    width: 35vw;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 4px 4px 4px rgb(243, 240, 240);
+}
+
+.headings{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 25px;
+    background: rgb(232, 232, 255);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.container .toggle .toggle-button{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .toggle.active{
+    background-color: cornflowerblue;
+}
+
+.container .toggle.active .toggle-button{
+    left: 22px;
+}
+
+.container .text2{
+    position: absolute;
+    left: 95px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.text{
+    position: absolute;
+    left: -150px;
+    font-size: 15px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.text2{
+    width: 100px;
+}
+
+.text, .text2{
+    top: 5px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#price{
+    display: flex;
+}
+
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+    padding-top: 15px;
+}
+
+
+.slideContainer{
+    align-self: center;
+    width: 25vw;
+    margin-top: -100px;
+}
+
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg,rgb(214,214,214) 60%, rgb(214,214,214)60%);
+    outline: none;
+    opacity: 0.7;
+    transition: 0.2s;
+    border-radius: 12px;
+
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: url(images/icon-slider.svg) rgb(0, 255, 255) ;
+    background-repeat: no-repeat;
+    background-position: 8px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+h3{
+    font-size: 45px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    color: grey;
+}
+
+button{
+    background-color: rgb(36, 36, 87);
+    color: white;
+    border-radius: 35px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+}
+
+.priceType{
+    color: grey;
+}
+
+.currency{
+    font-size: 45px;
+}
+
+.page{
+    color:grey;
+    font-size: 3vh;
+}
+
+#backImg{
+    top: 45px;
+    position: absolute;
+    z-index: -1;
+}
